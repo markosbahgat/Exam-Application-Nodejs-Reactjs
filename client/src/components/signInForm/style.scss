@@ -1,0 +1,24 @@
+div.input_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 10px;
+}
+div.input_wrapper#error::after {
+	content: attr(data-error);
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: rgb(230, 0, 0);
+	text-transform: capitalize;
+	margin-top: 2px;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+div.input_wrapper#error {
+	input {
+		border-color: rgb(230, 0, 0);
+		outline: rgb(230, 0, 0);
+		--tw-ring-color: rgb(230, 0, 0);
+	}
+}
