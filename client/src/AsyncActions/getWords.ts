@@ -5,6 +5,9 @@ import axios from 'axios';
 interface FetchError {
 	errorMessage: string | null;
 }
+
+// createAsyncThunk is A function that accepts a Redux action type string and a callback function that should returns a standard Redux thunk action creator.
+
 export const GetWords = createAsyncThunk<IQuestion[], undefined, { rejectValue: FetchError }>(
 	'words/get',
 	async (_, { rejectWithValue }) => {
