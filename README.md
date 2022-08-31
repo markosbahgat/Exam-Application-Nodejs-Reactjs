@@ -2,7 +2,6 @@
 
 # Exams Application
 
-[![License][license-badge]][license]
 
 this is a **Simple Full Stack Application**, inspired by Nagwa Company.
 
